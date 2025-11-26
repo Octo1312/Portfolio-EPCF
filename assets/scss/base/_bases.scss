@@ -1,0 +1,25 @@
+@use '../abstracts/variables' as var;
+@use '../base/utils' as utils;
+
+  *  {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: var.$police-principale;
+    background-color: var.$couleur-principale;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    object-fit: cover;
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}

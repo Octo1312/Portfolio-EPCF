@@ -1,0 +1,9 @@
+@use '../abstracts/variables' as var;
+@use '../base/utils' as utils;
+
+.btn {
+    padding: 7px 20px;
+    background-color: var.$green;
+    border-radius: 5px;
+    color: var.$black;
+}
