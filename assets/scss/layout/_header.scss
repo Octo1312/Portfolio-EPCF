@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as var;
+
+header {
+    font-family: var.$police-principale;
+    background-color: var.$green;
+    .nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2.5% 0;
+        gap: 300px;
+        img {
+            height: 10vh;
+        }
+        .nav-text {
+            display: flex;
+            gap: 100px;
+            li {
+                a {
+                    display: inline-block;
+                    color: var.$black;
+                    font-size: 1.5rem;
+                }
+            } 
+        }
+    }
+}
