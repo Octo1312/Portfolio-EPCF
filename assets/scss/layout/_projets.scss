@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as var;
+@use '../components/card' as card;
+
+#projets {
+    background-color: var.$black;
+    font-family: var.$police-principale;
+    padding-bottom: 5vh;
+
+    h2 {
+        color: var.$white;
+        font-size: 2rem;
+        text-align: center;
+        margin: 0;
+        padding: 5vh 0;
+
+        .container {
+            .cards {
+                display: flex;
+                
+                .card {
+                    .card-content {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

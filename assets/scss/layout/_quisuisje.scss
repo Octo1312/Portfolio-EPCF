@@ -42,13 +42,16 @@
     }
 
     .skills {
+        display: flex;
+        flex-direction: column;
         h2 {
-            padding: 2vh;
+            padding: 0;
+            padding-top: 5vh;
         }
         h3 {
             text-align: center;
             color: var.$white;
-            margin-bottom: 5vh;
+            margin-bottom: 2vh;
         }
 
         .svg {
