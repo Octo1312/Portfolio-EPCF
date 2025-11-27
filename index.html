@@ -9,6 +9,10 @@
 </head>
 
 <body>
+    <section>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+    </section>
+
     <header>
         <div class="nav">
             <img src="assets/img/Logo Léo Martin.png" alt="Logo Léo Martin">
@@ -29,6 +33,7 @@
                             développeur web</span></span></h1>
                 <a class="btn" href>Clique pour en savoir plus</a>
             </div>
+
         </section>
 
         <section id="quisuisje">
@@ -191,20 +196,28 @@
             <h2>Pour me contacter c'est ici</h2>
             <div class="container">
                 <img src="assets/img/code.jpg" alt="Écran d'ordinateur avec du code">
-                <div>
+                <div class="formulaire">
                     <form method="post">
-                        <label for="name">Prénom et Nom</label>
-                        <input type="text" id="name" required name="Prénom et Nom">
-                        <label for="coordonnées">coordonnées</label>
-                        <input type="text" id="coordo" required name="Coordonnées">
-                        <label for="objet">Objet de votre
-                            demande</label>
-                        <input type="text" id="objet" required name="Objet de la demande">
-                        <label for="description">Description plus
-                            détaillé</label>
-                        <input type="textarea" id="description" required name="Description plus détaillé">
+                        <div class="names"><label for="name">Prénom et Nom</label>
+                            <input type="text" id="name" placeholder="Nom & prénom..." required name="Prénom et Nom">
+                        </div>
+                        <div class="mail"><label for="coordonnées">Adresse E-Mail</label>
+                            <input type="email" id="coordo" placeholder="Votre adresse e-mail ici..." required
+                                name="Coordonnées">
+                        </div>
+                        <div class="object"><label for="objet">Objet de votre
+                                demande</label>
+                            <input type="text" id="objet" placeholder="Quel est votre demande ?" required
+                                name="Objet de la demande">
+                        </div>
+                        <div class="details"><label for="description">Description plus
+                                détaillé</label>
+                            <textarea name="plusdedetails" id="detail" rows="6"
+                                cols="35">Donnez moi plus de détails ici...</textarea>
+                        </div>
                     </form>
-                    <a class="btn" href>Envoyer -></a>
+
+                    <a class="btn" href>Envoyer</a>
                 </div>
             </div>
         </section>
@@ -231,6 +244,7 @@
             </div>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
