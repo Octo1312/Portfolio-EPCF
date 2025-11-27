@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as var;
+
+footer {
+    background-color: var.$green;
+    font-family: var.$police-principale;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    text-align: center;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 8vh;
+
+        .coordonnees {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5vh;
+
+            h3 {
+                font-size: 2rem;
+                margin: 0;
+            }
+
+            p {
+                margin: 0;
+                font-size: 1.2rem;
+            }
+
+            a {
+                color: var.$black;
+                font-size: 1.2rem;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                text-decoration-color: var.$white;
+                text-decoration-thickness: 3px;
+                text-underline-offset: 0.3rem;
+            }
+        }
+
+        .navigation {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5vh;
+
+            h3 {
+                font-size: 2rem;
+                margin: 0;
+            }
+
+            a {
+                font-size: 1.2rem;
+                color: var.$black;
+            }
+
+            a:hover {
+                text-decoration: underline;
+                text-decoration-color: var.$white;
+                text-decoration-thickness: 3px;
+                text-underline-offset: 0.3rem;
+            }
+        }
+    }
+}

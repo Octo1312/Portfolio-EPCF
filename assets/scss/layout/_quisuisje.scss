@@ -26,11 +26,11 @@
         .presentation {
             display: flex;
             flex-direction: column;
-            gap: 80px;
+            gap: 4rem;
             justify-content: center;
 
             p {
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 color: var.$white;
                 margin: 0;
 
@@ -57,7 +57,7 @@
         .svg {
             display: flex;
             justify-content: center;
-            gap: 10%;
+            gap: 3rem;
 
             p {
                 text-align: center;
