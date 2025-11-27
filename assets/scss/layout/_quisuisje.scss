@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as var;
+
+#quisuisje {
+    background-color: var.$grey;
+    font-family: var.$police-principale;
+
+    h2 {
+        margin: 0;
+        font-size: 2rem;
+        color: var.$white;
+        text-align: center;
+        padding: 5vh 0;
+    }
+
+    .container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        max-width: 1400px;
+
+        img {
+            width: 65%;
+            height: 500px;
+        }
+
+        .presentation {
+            display: flex;
+            flex-direction: column;
+            gap: 80px;
+            justify-content: center;
+
+            p {
+                font-size: 1.5rem;
+                color: var.$white;
+                margin: 0;
+
+                span {
+                    color: var.$green;
+                }
+            }
+        }
+    }
+
+    .skills {
+        h2 {
+            padding: 2vh;
+        }
+        h3 {
+            text-align: center;
+            color: var.$white;
+            margin-bottom: 5vh;
+        }
+
+        .svg {
+            display: flex;
+            justify-content: center;
+            gap: 10%;
+
+            p {
+                text-align: center;
+                color: var.$white;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
