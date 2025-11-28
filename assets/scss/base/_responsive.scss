@@ -1,6 +1,11 @@
 @use '../abstracts/variables' as var;
 
 @media (max-width: 768px) {
+    header {
+        .classic-menu {
+            display: none !important;
+        }
+    }
     #quisuisje {
         .skills {
             .svg {
@@ -40,4 +45,39 @@
 
 
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    header {
+        .classic-menu {
+            display: none !important;
+        }
+    }
+
+    #projets {
+        .cards {
+            display: flex;
+            flex-direction: column;
+
+            .card {
+                width: 100%;
+            }
+        }
+    }
+
+    #quisuisje {
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    footer {
+        .container {
+            display: flex;
+            flex-direction: column;
+
+            .navigation {
+                margin-right: 0 !important;
+            }
+        }
+    }
+}

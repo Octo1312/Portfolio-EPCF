@@ -13,17 +13,34 @@
         <button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
     </section>
 
-    <header>
+    <header id="head">
         <div class="header">
             <img src="assets/img/Logo Léo Martin.png" alt="Logo Léo Martin">
             <nav>
-                <ul class="links-menu">
-                    <li><a href>Accueil</a></li>
-                    <li><a href>Qui suis-je</a></li>
-                    <li><a href>Projets</a></li>
-                    <li><a href>Contact</a></li>
+                <ul class="classic-menu">
+                    <li><a href="#head">Accueil</a></li>
+                    <li><a href="#quisuisje">Qui suis-je</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
+            <nav class="responsive-nav">
+                <ul class="responsive-menu">
+                    <li><a href="#head">Accueil</a></li>
+                    <li><a href="#quisuisje">Qui suis-je</a></li>
+                    <li><a href="#projets">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="logo-burger">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="lucide lucide-menu-icon lucide-menu">
+                    <path d="M4 5h16" />
+                    <path d="M4 12h16" />
+                    <path d="M4 19h16" />
+                </svg>
+            </div>
         </div>
 
     </header>
@@ -33,7 +50,7 @@
             <div class="container">
                 <h1>Bienvenue, <span><br>Je suis Léo,<span><br>Je suis
                             développeur web</span></span></h1>
-                <a class="btn" href>Clique pour en savoir plus</a>
+                <a class="btn" href="#quisuisje">Clique pour en savoir plus</a>
             </div>
 
         </section>
@@ -149,7 +166,7 @@
                         <h3>Baldur's Gate III</h3>
                         <p>Le nouvel Opus de la franchise vient de
                             sortir, le jeu comme le site est un véritable triple A.</p>
-                        <a class="btn" href="https://github.com/Octo1312/Exercice-MagicTheGathering">Voir
+                        <a class="btn" href="https://github.com/Octo1312/Exercice-BaldursGate3">Voir
                             le projet ici</a>
                     </div>
                 </div>
@@ -163,7 +180,7 @@
                             climatique et les possibilités d'agir
                             pour
                             éviter la catastrophe.</p>
-                        <a class="btn" href="https://github.com/Octo1312/Exercice-MagicTheGathering">Voir
+                        <a class="btn" href="https://github.com/Octo1312/Exercice-GreenEarth">Voir
                             le projet ici</a>
                     </div>
                 </div>
@@ -176,7 +193,7 @@
                         <p>Très charmante petit village situé en
                             Ariège, Aucazein saura vous séduire
                             grâce à leur site dynamisé.</p>
-                        <a class="btn" href="https://github.com/Octo1312/Exercice-MagicTheGathering">Voir
+                        <a class="btn" href="https://github.com/mizuchits/Projet-de-groupe-Mairie-Aucazein">Voir
                             le projet ici</a>
                     </div>
                 </div>
@@ -228,10 +245,10 @@
             </div>
             <div class="navigation">
                 <h3>Navigation</h3>
-                <a href>Accueil</a>
-                <a href>Qui suis-je</a>
-                <a href>Projets</a>
-                <a href>Contact</a>
+                <a href="#head">Accueil</a>
+                <a href="#quisuisje">Qui suis-je</a>
+                <a href="#projets">Projets</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </footer>

@@ -17,3 +17,17 @@ function topFunction() {
 }
 
 // Menu burger
+const logoBurger = document.getElementsByClassName('logo-burger')[0]
+const responsiveNav = document.getElementsByClassName('responsive-nav')[0]
+
+let count = 0
+
+logoBurger.addEventListener('click', function () {
+  if (count == 0) {
+    responsiveNav.classList.add('open')
+    count++
+  } else {
+    responsiveNav.classList.remove('open')
+    count--
+  }
+})

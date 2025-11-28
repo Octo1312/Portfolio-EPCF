@@ -10,13 +10,18 @@ header {
         justify-content: center;
         padding: 2.5% 0;
         gap: 5rem;
+        @media (max-width: 375px) {
+            gap: 2rem;
+        }
+        height: 15vh;
+        
 
         img {
             height: 12vh;
         }
 
         nav {
-            .links-menu {
+            .classic-menu {
                 display: flex;
                 gap: 2rem;
 
@@ -34,6 +39,67 @@ header {
                         text-underline-offset: 0.3rem;
                     }
                 }
+            }
+        }
+
+        .responsive-nav {
+            transform: translateX(-100%);
+            @media (max-width: 375px) {
+                transform: translateX(-150%);
+            }
+
+            position: absolute;
+            top: 15vh;
+            @media (max-width: 768px) {
+                top: 15vh;
+            }
+            border-top: 1px solid var.$white;
+            width: 100%;
+            text-align: center;
+            transition: 3s ease;
+            
+            &.open {
+                transform: translateX(0);
+            }
+            ul {
+                padding-left: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 2rem;
+                @media (max-width: 375px) {
+                    gap: 1rem;
+                }
+                padding: 2rem;
+                li {
+                    a {
+                        color: var.$white;
+                        font-family: var.$police-principale;
+                        font-size: 2rem;
+                        @media (max-width: 375px) {
+                            font-size: 2rem;
+                        }
+                    }
+
+                    a:hover {
+                        text-decoration: underline;
+                        text-decoration-color: var.$white;
+                        text-decoration-thickness: 3px;
+                        text-underline-offset: 0.3rem;
+                    }
+                }
+            }
+        }
+
+        .logo-burger {
+            display: none;
+
+            @media (max-width: 375px) {
+                display: block;
+            }
+
+            @media (max-width: 768px) {
+                display: block;
             }
         }
     }
