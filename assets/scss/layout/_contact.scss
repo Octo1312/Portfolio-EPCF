@@ -22,6 +22,9 @@
             object-fit: cover;
             max-width: 100%;
             width: 50%;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
         }
 
         .formulaire {
@@ -37,7 +40,6 @@
                 .names {
                     display: flex;
                     flex-direction: column;
-                    width: 50vh;
                     gap: 1vh;
 
                     label {
@@ -119,6 +121,10 @@
             .btn {
                 width: 50vh;
                 text-align: center;
+
+                @media (max-width: 768px) {
+                    width: 100%;
+                }
             }
 
         }

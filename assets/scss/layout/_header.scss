@@ -4,7 +4,7 @@ header {
     font-family: var.$police-principale;
     background-color: var.$green;
 
-    .nav {
+    .header {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -15,22 +15,24 @@ header {
             height: 12vh;
         }
 
-        .nav-text {
-            display: flex;
-            gap: 100px;
+        nav {
+            .links-menu {
+                display: flex;
+                gap: 2rem;
 
-            li {
-                a {
-                    display: inline-block;
-                    color: var.$black;
-                    font-size: 1.5rem;
-                }
+                li {
+                    a {
+                        display: inline-block;
+                        color: var.$black;
+                        font-size: 1.5rem;
+                    }
 
-                a:hover {
-                    text-decoration: underline;
-                    text-decoration-color: var.$white;
-                    text-decoration-thickness: 3px;
-                    text-underline-offset: 0.3rem;
+                    a:hover {
+                        text-decoration: underline;
+                        text-decoration-color: var.$white;
+                        text-decoration-thickness: 3px;
+                        text-underline-offset: 0.3rem;
+                    }
                 }
             }
         }

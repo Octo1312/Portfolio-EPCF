@@ -21,6 +21,9 @@
         img {
             width: 65%;
             height: 500px;
+            @media (max-width: 768px) {
+                height: 600px;
+            }
         }
 
         .presentation {
@@ -28,6 +31,9 @@
             flex-direction: column;
             gap: 4rem;
             justify-content: center;
+            @media (max-width: 768px) {
+                gap: 1rem;
+            }
 
             p {
                 font-size: 1.2rem;

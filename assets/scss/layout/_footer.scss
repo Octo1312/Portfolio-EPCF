@@ -12,14 +12,24 @@ footer {
         justify-content: center;
         gap: 8vh;
 
+        @media (max-width: 768px) {
+            gap: 2vh;
+        }
+
         .coordonnees {
             display: flex;
             flex-direction: column;
             gap: 1.5vh;
 
+
+
             h3 {
                 font-size: 2rem;
                 margin: 0;
+
+                @media (max-width: 768px) {
+                    font-size: 1.5rem;
+                }
             }
 
             p {
@@ -45,9 +55,17 @@ footer {
             flex-direction: column;
             gap: 1.5vh;
 
+            @media (max-width: 768px) {
+                margin-right: 2rem;
+            }
+
             h3 {
                 font-size: 2rem;
                 margin: 0;
+
+                @media (max-width: 768px) {
+                    font-size: 1.5rem;
+                }
             }
 
             a {

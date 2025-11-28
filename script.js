@@ -1,7 +1,7 @@
 let mybutton = document.getElementById("myBtn");
 
 // Si scroll de minimum 20px alors fais apparaitre le bouton
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -15,3 +15,5 @@ function scrollFunction() {
 function topFunction() {
   document.documentElement.scrollTop = 0;
 }
+
+// Menu burger
