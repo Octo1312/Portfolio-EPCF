@@ -16,7 +16,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "sass": "sass -w assets/scss:assets/css"
+    "dev": "sass -w assets/scss:assets/css"
   },
   "dependencies": {
     "sass": "^1.94.2"
