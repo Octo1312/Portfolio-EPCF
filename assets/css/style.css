@@ -1,0 +1,568 @@
+@font-face {
+  font-family: "Roboto Regular";
+  src: url(../fonts/static/RobotoMono-Regular.ttf);
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto Mono", sans-serif;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+@media (max-width: 768px) {
+  header .classic-menu {
+    display: none !important;
+  }
+  #quisuisje .skills .svg {
+    flex-wrap: wrap;
+  }
+  #projets .cards {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #projets .cards .bg3 p {
+    margin-bottom: 1.2rem;
+  }
+  #projets .cards .green-earth img {
+    width: 100%;
+  }
+  #contact .container {
+    gap: 0;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 375px) {
+  header .classic-menu {
+    display: none !important;
+  }
+  #projets .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  #projets .cards .card {
+    width: 100%;
+  }
+  #quisuisje .container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .container .navigation {
+    margin-right: 0 !important;
+  }
+}
+.btn {
+  padding: 7px 20px;
+  background-color: #02a855;
+  border-radius: 5px;
+  color: #1A1C1B;
+}
+
+.btn:hover {
+  background-color: #1A1C1B;
+  color: #02a855;
+}
+
+.cards {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 35%;
+  background-color: #2A2E2E;
+  border-bottom-left-radius: 2vh;
+  border-bottom-right-radius: 2vh;
+  gap: 1vh;
+}
+.cards .card .card-img img {
+  height: 19vh;
+}
+.cards .card .card-content {
+  color: #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  margin-right: 3%;
+  gap: 1vh;
+}
+.cards .card .card-content h3 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.cards .card .card-content p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.cards .card .card-content a {
+  margin-bottom: 1vh;
+}
+
+#contact {
+  font-family: "Roboto Mono", sans-serif;
+  color: #EEEEEE;
+  background-color: #2A2E2E;
+  padding-bottom: 5vh;
+}
+#contact h2 {
+  margin: 0;
+  padding: 5vh 0;
+  text-align: center;
+  font-size: 2rem;
+}
+#contact .container {
+  display: flex;
+  justify-content: center;
+  gap: 1vh;
+}
+#contact .container img {
+  object-fit: cover;
+  max-width: 100%;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  #contact .container img {
+    width: 100%;
+  }
+}
+#contact .container .formulaire {
+  display: flex;
+  flex-direction: column;
+}
+#contact .container .formulaire form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-bottom: 4vh;
+}
+#contact .container .formulaire form .names {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+#contact .container .formulaire form .names label {
+  color: #02a855;
+}
+#contact .container .formulaire form .names #name {
+  padding: 1vh;
+  border-radius: 0.5rem;
+}
+#contact .container .formulaire form .names input::placeholder {
+  font-weight: bold;
+  color: grey;
+}
+#contact .container .formulaire form .mail {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+#contact .container .formulaire form .mail label {
+  color: #02a855;
+}
+#contact .container .formulaire form .mail #coordo {
+  padding: 1vh;
+  border-radius: 0.5rem;
+}
+#contact .container .formulaire form .mail input::placeholder {
+  font-weight: bold;
+  color: grey;
+}
+#contact .container .formulaire form .object {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+#contact .container .formulaire form .object label {
+  color: #02a855;
+}
+#contact .container .formulaire form .object #objet {
+  padding: 1vh;
+  border-radius: 0.5rem;
+}
+#contact .container .formulaire form .object input::placeholder {
+  font-weight: bold;
+  color: grey;
+}
+#contact .container .formulaire form .details {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+#contact .container .formulaire form .details label {
+  color: #02a855;
+}
+#contact .container .formulaire form .details textarea {
+  resize: none;
+  font-family: "Roboto Mono", sans-serif;
+  color: grey;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  padding: 2%;
+}
+#contact .container .formulaire .btn {
+  width: 50vh;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  #contact .container .formulaire .btn {
+    width: 100%;
+  }
+}
+
+footer {
+  background-color: #02a855;
+  font-family: "Roboto Mono", sans-serif;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  text-align: center;
+}
+footer .container {
+  display: flex;
+  justify-content: center;
+  gap: 8vh;
+}
+@media (max-width: 768px) {
+  footer .container {
+    gap: 2vh;
+  }
+}
+footer .container .coordonnees {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+footer .container .coordonnees h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  footer .container .coordonnees h3 {
+    font-size: 1.5rem;
+  }
+}
+footer .container .coordonnees p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+footer .container .coordonnees a {
+  color: #1A1C1B;
+  font-size: 1.2rem;
+}
+footer .container .coordonnees a:hover {
+  text-decoration: underline;
+  text-decoration-color: #EEEEEE;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
+}
+footer .container .navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vh;
+}
+@media (max-width: 768px) {
+  footer .container .navigation {
+    margin-right: 2rem;
+  }
+}
+footer .container .navigation h3 {
+  font-size: 2rem;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  footer .container .navigation h3 {
+    font-size: 1.5rem;
+  }
+}
+footer .container .navigation a {
+  font-size: 1.2rem;
+  color: #1A1C1B;
+}
+footer .container .navigation a:hover {
+  text-decoration: underline;
+  text-decoration-color: #EEEEEE;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
+}
+
+header {
+  font-family: "Roboto Mono", sans-serif;
+  background-color: #02a855;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.5% 0;
+  gap: 5rem;
+}
+@media (max-width: 375px) {
+  header .header {
+    gap: 2rem;
+  }
+}
+header .header {
+  height: 15vh;
+}
+header .header img {
+  height: 12vh;
+}
+header .header nav .classic-menu {
+  display: flex;
+  gap: 2rem;
+}
+header .header nav .classic-menu li a {
+  display: inline-block;
+  color: #1A1C1B;
+  font-size: 1.5rem;
+}
+header .header nav .classic-menu li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #EEEEEE;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
+}
+header .header .responsive-nav {
+  transform: translateX(-100%);
+}
+@media (max-width: 375px) {
+  header .header .responsive-nav {
+    transform: translateX(-150%);
+  }
+}
+header .header .responsive-nav {
+  position: absolute;
+  top: 15vh;
+}
+@media (max-width: 768px) {
+  header .header .responsive-nav {
+    top: 15vh;
+  }
+}
+header .header .responsive-nav {
+  border-top: 1px solid #EEEEEE;
+  width: 100%;
+  text-align: center;
+  transition: 3s ease;
+}
+header .header .responsive-nav.open {
+  transform: translateX(0);
+}
+header .header .responsive-nav ul {
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+@media (max-width: 375px) {
+  header .header .responsive-nav ul {
+    gap: 1rem;
+  }
+}
+header .header .responsive-nav ul {
+  padding: 2rem;
+}
+header .header .responsive-nav ul li a {
+  color: #EEEEEE;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 2rem;
+}
+@media (max-width: 375px) {
+  header .header .responsive-nav ul li a {
+    font-size: 2rem;
+  }
+}
+header .header .responsive-nav ul li a:hover {
+  text-decoration: underline;
+  text-decoration-color: #EEEEEE;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
+}
+header .header .logo-burger {
+  display: none;
+}
+@media (max-width: 375px) {
+  header .header .logo-burger {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  header .header .logo-burger {
+    display: block;
+  }
+}
+
+#hero {
+  background-image: url(../img/hero.jpg);
+  background-position: 25% 25%;
+  background-size: cover;
+  color: #EEEEEE;
+  font-family: "Roboto Mono", sans-serif;
+  height: 110vh;
+}
+#hero .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  height: 100%;
+  align-items: flex-start;
+}
+#hero .container h1 {
+  font-size: 3rem;
+  margin-top: 16vh;
+}
+#hero .container .btn {
+  padding: 1.2rem;
+}
+
+#projets {
+  background-color: #1A1C1B;
+  font-family: "Roboto Mono", sans-serif;
+  padding-bottom: 5vh;
+}
+#projets h2 {
+  color: #EEEEEE;
+  font-size: 2rem;
+  text-align: center;
+  margin: 0;
+  padding: 5vh 0;
+}
+#projets h2 .container .cards .card .card-content {
+  text-align: center;
+}
+
+#quisuisje {
+  background-color: #2A2E2E;
+  font-family: "Roboto Mono", sans-serif;
+}
+#quisuisje h2 {
+  margin: 0;
+  font-size: 2rem;
+  color: #EEEEEE;
+  text-align: center;
+  padding: 5vh 0;
+}
+#quisuisje .container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  max-width: 1400px;
+}
+#quisuisje .container img {
+  width: 65%;
+  height: 500px;
+}
+@media (max-width: 768px) {
+  #quisuisje .container img {
+    height: 600px;
+  }
+}
+@media (max-width: 375px) {
+  #quisuisje .container img {
+    width: 100%;
+    height: 200px;
+  }
+}
+#quisuisje .container .presentation {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  #quisuisje .container .presentation {
+    gap: 1rem;
+  }
+}
+#quisuisje .container .presentation p {
+  font-size: 1.2rem;
+  color: #EEEEEE;
+  margin: 0;
+}
+#quisuisje .container .presentation p span {
+  color: #02a855;
+}
+#quisuisje .skills {
+  display: flex;
+  flex-direction: column;
+}
+#quisuisje .skills h2 {
+  padding: 0;
+  padding-top: 5vh;
+}
+#quisuisje .skills h3 {
+  text-align: center;
+  color: #EEEEEE;
+  margin-bottom: 2vh;
+}
+#quisuisje .skills .svg {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+@media (max-width: 375px) {
+  #quisuisje .skills .svg {
+    gap: 1rem;
+  }
+}
+#quisuisje .skills .svg {
+  text-align: center;
+}
+#quisuisje .skills .svg p {
+  color: #EEEEEE;
+  font-size: 1.5rem;
+}
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #02a855;
+  color: #EEEEEE;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 2rem;
+  box-shadow: 8px 8px 8px 8px #1A1C1B;
+}
+
+#myBtn:hover {
+  background-color: #EEEEEE;
+  color: #02a855;
+}
+
+/*# sourceMappingURL=style.css.map */
