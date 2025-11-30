@@ -509,8 +509,14 @@ header .header .logo-burger {
   color: #EEEEEE;
   margin: 0;
 }
-#quisuisje .container .presentation p span {
+#quisuisje .container .presentation p span a {
   color: #02a855;
+}
+#quisuisje .container .presentation p span a:hover {
+  text-decoration: underline;
+  text-decoration-color: #EEEEEE;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 0.3rem;
 }
 #quisuisje .skills {
   display: flex;
