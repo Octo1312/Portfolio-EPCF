@@ -88,6 +88,7 @@ ul {
 .btn:hover {
   background-color: #1A1C1B;
   color: #02a855;
+  transition: 1s;
 }
 
 .cards {
@@ -283,6 +284,7 @@ footer .container .coordonnees a:hover {
   text-decoration-color: #EEEEEE;
   text-decoration-thickness: 3px;
   text-underline-offset: 0.3rem;
+  transition: 1.5s;
 }
 footer .container .navigation {
   display: flex;
@@ -312,6 +314,7 @@ footer .container .navigation a:hover {
   text-decoration-color: #EEEEEE;
   text-decoration-thickness: 3px;
   text-underline-offset: 0.3rem;
+  transition: 1.5s;
 }
 
 header {
@@ -350,6 +353,7 @@ header .header nav .classic-menu li a:hover {
   text-decoration-color: #EEEEEE;
   text-decoration-thickness: 3px;
   text-underline-offset: 0.3rem;
+  transition: 1.5s;
 }
 header .header .responsive-nav {
   transform: translateX(-100%);
@@ -517,6 +521,7 @@ header .header .logo-burger {
   text-decoration-color: #EEEEEE;
   text-decoration-thickness: 3px;
   text-underline-offset: 0.3rem;
+  transition: 1.5s;
 }
 #quisuisje .skills {
   display: flex;
@@ -569,6 +574,7 @@ header .header .logo-burger {
 #myBtn:hover {
   background-color: #EEEEEE;
   color: #02a855;
+  transition: 1s;
 }
 
 /*# sourceMappingURL=style.css.map */
